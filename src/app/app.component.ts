@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
   }
 
   refreshData(): void {
-    this.http.get<Exchange[]>("https://forex.1forge.com/1.0.3/quotes?pairs=EURUSD,GBPJPY,AUDUSD&api_key=O66q9PXwTQ0VDUufsXgQC8PlQuKjOZM4")
+    this.http.get<Exchange[]>("https://forex.1forge.com/1.0.3/quotes?pairs=EURUSD,GBPJPY,AUDUSD&api_key=qWhD4ivYpuDlBKuMZURqkpZ2wZufVSTE")
     .subscribe(
       data => {
         this.results = data;
